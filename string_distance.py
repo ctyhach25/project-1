@@ -10,3 +10,4 @@ def string_distance(string_list, target_string):
     for s in string_list:
         results[s] = fuzz.ratio(s, target_string)
     return results
+
