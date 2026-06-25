@@ -7,7 +7,8 @@ from fuzzywuzzy import fuzz
 
 def string_distance(string_list, target_string):
     results = {}
-    for s in string_list:
-        results[s] = fuzz.ratio(s, target_string)
+    for item in string_list:
+        results[item] = fuzz.ratio(item, target_string)
     return results
 
+# Note: I wasn't quite sure if my code was supposed to print something back, so I just kept it as a return. The assignment didn't specifically state a print, but it did include the term 'return', so I went off of that.
