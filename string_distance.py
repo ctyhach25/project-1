@@ -6,9 +6,10 @@
 from fuzzywuzzy import fuzz
 
 def string_distance(string_list, target_string):
+# Compares the list of strings with the target string, and will return a dictinary of similarity ratios.
     results = {}
     for item in string_list:
         results[item] = fuzz.ratio(item, target_string)
     return results
 
-# Note: I wasn't quite sure if my code was supposed to print something back, so I just kept it as a return. The assignment didn't specifically state a print, but it did include the term 'return', so I went off of that.
+# Note: I wasn't quite sure if my code was supposed to print something back, so I just kept it as a return. The assignment didn't specifically state a print, but it did include the term 'return', so I went off of that. Thank you!
